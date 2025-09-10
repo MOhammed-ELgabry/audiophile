@@ -141,6 +141,7 @@ overflow: hidden;
         align-content: center;
         width: 50%;
         border: none;
+        text-align: center;
      }
 
 }
@@ -160,13 +161,16 @@ overflow: hidden;
       h2{
         font-family: Manrope;
 font-weight: 700;
-font-size: 56px;
+font-size: clamp(1.5rem , 2.5rem , 56px) ;
 color: white;
 line-height: 58px;
 letter-spacing: 2px;
 text-transform: uppercase;
 padding: 1rem;
-
+ @media screen and (max-width:992px){
+  text-align: center;
+ }
+       
     }
   }
     p{
@@ -254,7 +258,9 @@ line-height: 100%;
 letter-spacing: 2px;
 text-transform: uppercase;
 
-
+@media screen and (max-width:767px){
+  text-align: center;
+}
   }
 }
 .sec-5{
@@ -288,7 +294,9 @@ font-size: 40px;
 line-height: 44px;
 letter-spacing: 1.43px;
 text-transform: uppercase;
-
+@media screen and ( max-width:992px){
+  text-align: center;
+}
   }
   span{
     font-family: Manrope;
